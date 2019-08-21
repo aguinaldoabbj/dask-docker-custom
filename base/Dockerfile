@@ -28,8 +28,8 @@ RUN conda install --yes --freeze-installed \
     && find /opt/conda/lib/python*/site-packages/bokeh/server/static -type f,l -name '*.js' -not -name '*.min.js' -delete \
     && rm -rf /opt/conda/pkgs
 
-COPY prepare.sh /usr/bin/prepare.sh
+#COPY prepare.sh /usr/bin/prepare.sh
 
-RUN mkdir /opt/app
+#RUN mkdir /opt/app
 
 ENTRYPOINT ["tini", "-g", "--", "/usr/bin/prepare.sh"]
