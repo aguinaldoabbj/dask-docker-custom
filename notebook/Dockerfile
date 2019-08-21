@@ -36,7 +36,7 @@ RUN conda install --yes --freeze-installed \
     -c conda-forge \
     fastparquet \
     hdfs3 \
-    && pip install pykube-ng --no-cache-dir
+    && pip install pykube-ng --no-cache-dir \
     && npm cache clean --force \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
     && find /opt/conda/ -type f,l -name '*.pyc' -delete \
