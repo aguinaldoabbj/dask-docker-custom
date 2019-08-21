@@ -32,4 +32,4 @@ RUN conda install --yes --freeze-installed \
 
 #RUN mkdir /opt/app
 
-ENTRYPOINT ["tini", "-g", "--", "/usr/bin/prepare.sh"]
+#ENTRYPOINT ["tini", "-g", "--", "/usr/bin/prepare.sh"]
