@@ -21,6 +21,7 @@ RUN conda install --yes --freeze-installed \
     -c conda-forge \
     fastparquet \
     hdfs3 \
+    dask-ml \
     && conda clean -tipsy \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
     && find /opt/conda/ -type f,l -name '*.pyc' -delete \
